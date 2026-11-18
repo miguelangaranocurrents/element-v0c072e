@@ -38,6 +38,12 @@ $left-gutter: 64px;
         color: $secondary-content;
     }
 
+    /* The edit composer wrapper is the direct child of the body slot, which clips
+       overflow. Keep it visible so the autocomplete can extend above the tile. */
+    .mx_EditMessageComposerWrapper {
+        overflow: visible;
+    }
+
     .mx_EventTile_content {
         &.mx_EditMessageComposer,
         &.mx_EditWysiwygComposer {

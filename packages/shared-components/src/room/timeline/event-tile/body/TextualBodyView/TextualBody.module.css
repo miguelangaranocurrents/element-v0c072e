@@ -41,6 +41,12 @@
     display: flex;
 }
 
+/* Allow the body to shrink below its min-content width (e.g. wide code blocks),
+   so text wraps inside the tile instead of overflowing and being clipped. */
+.annotated > :not(.annotation) {
+    min-width: 0;
+}
+
 .annotatedInline {
     display: inline-flex;
 }
